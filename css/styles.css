@@ -760,7 +760,7 @@ button {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--body-text-light-slate);
-  margin-bottom: 4px;
+  margin-bottom: 24px;
 }
 
 .review-form-input-wrapper {
@@ -782,9 +782,8 @@ button {
 }
 
 .review-form-input:focus {
-  outline-color: transparent;
-  outline-offset: 2px;
-  border-color: var(--accent-color);
+  border-color: var(--cta-focused-active-links);
+  fill: var(--cta-focused-active-links);
 }
 
 .review-form-field-icon {
@@ -813,7 +812,7 @@ button {
   border: 1px solid rgba(46, 47, 66, 0.4);
   color: rgba(46, 47, 66, 0.4);
   background-color: transparent;
-  transition: border-color var(--transition-dur-and-func);
+  transition: border-color var(--timing-duration) var(--timing-function);
   border-color: var(--cta-focused-active-links);
 }
 
