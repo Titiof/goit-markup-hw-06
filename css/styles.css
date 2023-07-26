@@ -611,11 +611,11 @@ button {
 
 .footer-form {
   display: flex;
+  gap: 24px;
 }
 
 .footer-form-label {
   display: flex;
-  gap: 24px;
 }
 .label-input {
   width: 264px;
