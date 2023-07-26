@@ -854,8 +854,10 @@ button {
 }
 
 .reviev-form-field-policy {
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
+
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -864,10 +866,6 @@ button {
 }
 
 .reviev-accent-colors {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -876,6 +874,13 @@ button {
     border var(--timing-duration) var(--timing-function),
     fill var(--timing-duration) var(--timing-function);
   fill: transparent;
+  margin-right: 8px;
+}
+
+.review-form-checkbox-policy:checked + .reviev-accent-colors use {
+  background-color: var(--pressed-state-cta);
+  border: none;
+  fill: var(--light-mode-backgrounds);
 }
 
 .review-form-submit-btn {
