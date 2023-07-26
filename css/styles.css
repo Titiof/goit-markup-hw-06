@@ -805,10 +805,10 @@ button {
   letter-spacing: 0.04em;
   padding: 8px 16px;
   border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
   color: rgba(46, 47, 66, 0.4);
   background-color: transparent;
   transition: border-color var(--timing-duration) var(--timing-function);
-  border-color: var(--cta-focused-active-links);
   outline: transparent;
   resize: none;
 }
@@ -823,7 +823,7 @@ button {
 .review-form-message:focus {
   outline-color: transparent;
   outline-offset: 2px;
-  border-color: var(--accent-color);
+  border-color: var(--cta-focused-active-links);
 }
 
 .review-form-checkbox-policy {
@@ -832,10 +832,14 @@ button {
 }
 
 .review-form-checkbox-policy:checked + .review-form-own-checkbox {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
+  background-color: var(--pressed-state-cta);
+  border: none;
+  fill: var(--light-mode-backgrounds);
 }
 
+.review-form-ppolice {
+  color: var(--cta-focused-active-links);
+}
 .review-form-own-checkbox {
   padding: 4px;
   border-radius: 6px;
@@ -855,10 +859,6 @@ button {
 .reviev-form-field-policy {
   display: flex;
   align-items: center;
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: -0.28px;
-  color: rgba(64, 64, 64, 0.6);
 }
 
 .accent-color {
@@ -877,28 +877,28 @@ button {
 }
 
 .review-form-submit-btn {
-  min-width: 118px;
-  padding: 14px;
-  font-size: 12px;
-  font-weight: 600;
+  min-width: 169px;
+  height: 56px;
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
   letter-spacing: 0.04em;
-  border: none;
   border-radius: 100px;
-  color: var(--text-color-theme-dark);
-  background-color: var(--accent-color);
-  transition: color var(--transition-dur-and-func),
-    background-color var(--transition-dur-and-func);
+  color: var(--header-team-card-background);
+  background-color: var(--cta-focused-active-links);
+  border: none;
+  border-radius: 4px;
+  transition: background-color var(--timing-duration) var(--timing-function);
 }
 
 .review-form-submit-btn:hover,
 .review-form-submit-btn:focus {
-  background-color: #fcf1e0;
-  color: var(--accent-color);
+  border: 1px solid transparent;
+  background-color: var(--pressed-state-cta);
+  color: var(--header-team-card-background);
 }
 /* ================ REVIEWS ================ */
-.margb16 {
-  margin-bottom: 16px;
-}
-.margb24 {
+.margbt {
   margin-bottom: 24px;
 }
