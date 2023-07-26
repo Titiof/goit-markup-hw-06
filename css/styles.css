@@ -877,7 +877,9 @@ button {
   margin-right: 8px;
 }
 
-.review-form-checkbox-policy:checked + .reviev-accent-colors use {
+.review-form-checkbox-policy:checked
+  + .reviev-form-field-policy
+  .reviev-accent-colors {
   background-color: var(--pressed-state-cta);
   border: none;
   fill: var(--light-mode-backgrounds);
