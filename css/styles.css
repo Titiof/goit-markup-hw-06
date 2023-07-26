@@ -856,6 +856,11 @@ button {
 .reviev-form-field-policy {
   display: flex;
   align-items: center;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--body-text-light-slate);
+  margin-bottom: 4px;
 }
 
 .reviev-accent-colors {
