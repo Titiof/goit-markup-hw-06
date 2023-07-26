@@ -688,6 +688,7 @@ button {
   left: 50%;
   width: 408px;
   min-height: 584px;
+  padding: 72px 24px 24px;
   transform: translate(-50%, -50%) scale(1);
   background: var(--modal-background);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -729,7 +730,142 @@ button {
   fill: var(--header-team-card-background);
 }
 
-/* .review-form-submit-btn {
+/* ================ REVIEWS ================ */
+
+/* ================ MODAL FORM ================ */
+.review-form {
+  display: flex;
+  width: 360px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.review-form-sectoin {
+  margin-bottom: 8px;
+}
+.review-form-description {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+
+  color: var(--dark-overlays-shadows-headings);
+  margin-bottom: 16px;
+}
+
+.review-form-field {
+  display: block;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--body-text-light-slate);
+  margin-bottom: 4px;
+}
+
+.review-form-input-wrapper {
+  position: relative;
+  display: block;
+}
+
+.review-form-input {
+  width: 100%;
+  height: 40px;
+  padding-left: 38px;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-color: var(--cta-focused-active-links);
+  color: var(--text-color-theme-light);
+  background-color: transparent;
+  transition: border-color var(--timing-duration) var(--timing-function);
+  outline: transparent;
+}
+
+.review-form-input:focus {
+  outline-color: transparent;
+  outline-offset: 2px;
+  border-color: var(--accent-color);
+}
+
+.review-form-field-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  transition: fill var(--timing-duration) var(--timing-function);
+  fill: var(--cta-focused-active-links);
+}
+
+.review-form-input:focus + .review-form-field-icon {
+  fill: var(--accent-color);
+}
+
+.review-form-message {
+  width: 100%;
+  height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  padding: 8px 16px;
+  outline: transparent;
+  resize: none;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  color: rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  transition: border-color var(--transition-dur-and-func);
+  border-color: var(--cta-focused-active-links);
+}
+
+.review-form-message::placeholder {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.36px;
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.review-form-message:focus {
+  outline-color: transparent;
+  outline-offset: 2px;
+  border-color: var(--accent-color);
+}
+
+.review-form-checkbox-policy {
+  position: absolute;
+  appearance: none;
+}
+
+.review-form-checkbox-policy:checked + .review-form-own-checkbox {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.review-form-own-checkbox {
+  padding: 4px;
+  border-radius: 6px;
+  border: 1px solid rgba(17, 17, 17, 0.14);
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+.review-form-own-checkbox-icon {
+  display: none;
+}
+
+.review-form-checkbox-policy:checked + .review-form-own-checkbox use {
+  display: block;
+}
+
+.reviev-form-field-policy {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.28px;
+  color: rgba(64, 64, 64, 0.6);
+}
+
+.review-form-submit-btn {
   min-width: 118px;
   padding: 14px;
   font-size: 14px;
@@ -746,5 +882,5 @@ button {
 .review-form-submit-btn:focus {
   background-color: #fcf1e0;
   color: var(--accent-color);
-} */
-/* ================ REVIEWS ================ */
+}
+/* ================ /MODAL FORM ================ */
