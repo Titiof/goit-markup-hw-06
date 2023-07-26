@@ -682,12 +682,13 @@ button {
   pointer-events: none;
 }
 
-.modal-window {
+.modal {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 408px;
   min-height: 584px;
+  padding: 72px 24px 24px 24px;
   transform: translate(-50%, -50%) scale(1);
   background: var(--modal-background);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -733,10 +734,7 @@ button {
 
 /* ================ MODAL FORM ================ */
 .review-form {
-  display: flex;
   width: 360px;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 .review-form-sectoin {
@@ -754,7 +752,6 @@ button {
 }
 
 .review-form-field {
-  display: block;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -772,31 +769,31 @@ button {
   height: 40px;
   padding-left: 38px;
   border-radius: 4px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
   border-color: var(--cta-focused-active-links);
   color: var(--text-color-theme-light);
   background-color: transparent;
   transition: border-color var(--timing-duration) var(--timing-function);
   outline: transparent;
+  border: 1px solid rgba(46, 47, 66, 0.4);
 }
 
 .review-form-input:focus {
   outline-color: transparent;
   outline-offset: 2px;
-  border-color: var(--accent-color);
+  border-color: var(--cta-focused-active-links);
 }
 
 .review-form-field-icon {
   position: absolute;
   top: 50%;
-  left: 16px;
+  left: 8px;
   transform: translateY(-50%);
   transition: fill var(--timing-duration) var(--timing-function);
-  fill: var(--cta-focused-active-links);
+  fill: var(--hero-image-background);
 }
 
 .review-form-input:focus + .review-form-field-icon {
-  fill: var(--accent-color);
+  fill: var(--cta-focused-active-links);
 }
 
 .review-form-message {
@@ -883,3 +880,7 @@ button {
   color: var(--accent-color);
 }
 /* ================ REVIEWS ================ */
+
+.margb24 {
+  margin-bottom: 24px;
+}

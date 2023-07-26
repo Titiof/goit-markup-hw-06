@@ -406,8 +406,8 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop" data-modal>
-        <div class="modal-window">
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
             <button type="button" class="modal-window-close-btn" data-modal-close>
                 <svg class="modal-window-close-btn-img" width="8" height="8">
                     <use href="./images/icons.svg#close-black"></use>
@@ -419,35 +419,35 @@
                     <label class="review-form-field" for="user-name">Name</label>
                     <div class="review-form-input-wrapper">
                         <input class="review-form-input" type="text" name="user-name" id="user-name">
-                        <svg class="review-form-field-icon" width="18" height="24" aria-label="user avatar icon">
+                        <svg class="review-form-field-icon" width="18" height="24">
                             <use href="./images/icons/sprite.svg#vector-1"></use>
                         </svg>
                     </div>
                 </div>
                 <div class="review-form-sectoin">
-                    <label class="review-form-field">Phone</label>
+                    <label class="review-form-field" for="user-phone">Phone</label>
                     <div class="review-form-input-wrapper">
-                        <input class="review-form-input" type="tel" name="user_phone">
-                        <svg class="review-form-field-icon" width="18" height="24" aria-label="user avatar icon">
-                            <use href="./images/icons/sprite.svg#vector-3"></use>
-                        </svg>
-                    </div>
-                </div>
-                <div class="review-form-sectoin">
-                    <label class="review-form-field">Email</label>
-                    <div class="review-form-input-wrapper">
-                        <input class="review-form-input" type="email" name="user_email">
-                        <svg class="review-form-field-icon" width="18" height="24" aria-label="user avatar icon">
+                        <input class="review-form-input" type="tel" name="user-phone" id="user-phone">
+                        <svg class="review-form-field-icon" width="18" height="24">
                             <use href="./images/icons/sprite.svg#vector-2"></use>
                         </svg>
                     </div>
                 </div>
                 <div class="review-form-sectoin">
+                    <label class="review-form-field" for-="user-email">Email</label>
+                    <div class="review-form-input-wrapper">
+                        <input class="review-form-input" type="email" name="user-email" id="user-email">
+                        <svg class="review-form-field-icon" width="18" height="24">
+                            <use href="./images/icons/sprite.svg#vector-3"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="review-form-sectoin marg">
                     <label class="review-form-field" for="user-comment">Comment</label>
                     <textarea class="review-form-message" name="user-comment" placeholder="Text input"
                         id="user-comment"></textarea>
                 </div>
-                <div class="review-form-sectoin marg">
+                <div class="review-form-sectoin margb24">
                     <input class="review-form-checkbox-policy visually-hidden" type="checkbox" name="user-privacy"
                         value="true" id="user-privacy">
                     <label class="review-form-field reviev-form-field-policy" for="user-privacy">
@@ -460,23 +460,13 @@
                         </use>
                     </svg>
 
-
                 </div>
-                <button class="review-form-submit-btn" type="submit">Send</button>
+
             </form>
+            <button class="review-form-submit-btn" type="submit">Send</button>
         </div>
     </div>
     <script src="./js/modal.js"></script>
 </body>
 
 </html>
-
-<!-- <p></p>
-            <form action="">
-                <label for="user-name">Name</label>
-                <input type="text" name="user-name" id="user-name">
-                <label for="user-tel">Phone</label>
-                <input type="tel" name="user-tel" id="user-tel">
-                <label for="user-email">Email</label>
-                <input type="area" name="user-email" id="user-email">
-                <textarea name="" id="" cols="30" rows="10"></textarea> -->
