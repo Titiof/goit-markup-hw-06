@@ -605,9 +605,6 @@ button {
 .footer-form-buttom-svg {
   margin-left: 16px;
 }
-.marg {
-  margin-bottom: 16px;
-}
 
 .footer-form {
   display: flex;
@@ -861,7 +858,7 @@ button {
   align-items: center;
 }
 
-.accent-color {
+.reviev-accent-colors {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -901,4 +898,8 @@ button {
 /* ================ REVIEWS ================ */
 .margbt {
   margin-bottom: 24px;
+}
+
+.margb {
+  margin-bottom: 16px;
 }
